@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(villa-d-este-view-from-the-swimming-pool-2-1-658d24dc6688b.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    font-family: "Anton", sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: white;
+    background-blend-mode: hard-light;
+    background-color: rgb(43, 42, 42);
+    padding: 8px 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.register a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    flex-direction: column;
+}
+
+.text span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid rgb(14, 14, 14);
+    font-size: 2rem;
+}
+.welcome{
+    animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+    max-width: max-content;
+}
+.prime{
+    animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.text span:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.text span:nth-of-type(2) {
+    animation-delay: 0s;
+}
+
+.text h1 {
+    font-size: 2.5em;
+    color: #fefffb;
+    animation: flashing 2s infinite; 
+
+}
+
+.text a {
+    text-decoration: none;
+    background: indianred;
+    color: white;
+    padding: 15px 0px;
+    letter-spacing: 13px;
+    display: block;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    width: 444px;
+    border-radius: 8px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
